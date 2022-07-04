@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Module 14: Effective Search Strategies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This course is designed to help individuals to become smart consumers of news and informed participants in civic life.">
+    <meta name="author" content="ESSENTIAL Project Turkish Team">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery.tocify.css" rel="stylesheet">
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav icon -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+
+    <style>
+    body {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .headerDoc {
+      color: #005580;
+    }
+
+@media (max-width: 767px) {
+    #toc {
+        position: relative;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+    </style>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-VFJPMP12NF"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+ 		gtag('js', new Date());
+
+ 		gtag('config', 'G-VFJPMP12NF');
+	</script>
+
+</head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div id="toc">
+            <center>
+              <br>
+              <code class="trainee">Trainees Edition</code>
+              <code class="trainer">Trainers Edition</code>
+              <code class="select"><a href="?userType=trainee">Trainees Edition</a></code>
+              <code class="select"><a href="?userType=trainer">Trainers Edition</a></code>
+            <a href="#top"><img src="img/index/essential_logo.jpg" width="75%"></a>
+            <p><a class="btn btn-secondary btn-small" href="index.html">MOOC HOME</a></p>
+            </center>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="span9">
+          <div class="hero-unit">
+            <h1>Module 14: Effective Search Strategies</h1>
+          </div>
+        <h2>Module Description</h2>
+        <p>The main purpose of this module is to explain some of the search functions and operators necessary for developing an effective search strategy.</p>
+        <p class="trainer">The secondary aim is to guide trainers who want to use the content of this Module to train their trainees.</p>
+        <p>In accordance with these goals, Boolean logic, controlled vocabularies, field searching, proximity searching, truncation and wildcards, limits to constraint searches, <span class="trainer">and guidelines on how to teach the subject</span> are covered in this module.</p>
+        <p>Trainees who successfully complete this Module will be able to,</p>
+        <ul>
+        <li>understand why an effective search strategy is important,</li>
+        <li>understand Boolean logic and define operators (AND, OR, NOT),</li>
+        <li>understand importance of controlled vocabularies,</li>
+        <li>understand field searching and define basic fields,</li>
+        <li>define proximity operators and distinguish adjacency and nearby operators,</li>
+        <li>understand why and how to use truncation and wildcards.</li>
+        </ul>
+        <p class="trainer">Additionally, trainers who successfully complete this module, will be able to demonstrate an understanding of the guidelines for teaching the subject.</p>
+        <h2>Module Structure</h2>
+        <p>This module consists of the following parts:</p>
+        <ul>
+        <li>Module Description (objectives, description of the content, and learning outcomes)</li>
+        <li>Module Structure</li>
+        <li>Guidelines for Trainees</li>
+        <li class="trainer">Guidelines for Trainers (how to prepare, methods to use, and tips for trainers)</li>
+        <li>Content (study materials and exercises)</li>
+        <li>Quiz</li>
+        <li>Resources (references and recommended sources)</li>
+        </ul>
+          <p>The main objectives of the module, the description of the content and learning outcomes are explained in the Module Description section. Content includes all study materials and content related exercises. The quiz provides multiple choice questions for trainees to test their progress. Resources have two components: references, and recommended resources for further study. References is the list of resources cited in the content section; recommended resources consist of a list of supplemental resources which are recommended reading, in order to learn more on the topic. Guidelines for Trainees includes instructions and suggestions for trainees. <span class="trainer">Guidelines for Trainers leads trainers through different phases of the training, and provides useful tips to be used when teaching the subject.</span></p>
+        <h2>Guidelines for Trainees</h2>
+        <p>Trainees are expected to read the text, and do the exercises. They may consult recommended resources for further information. After completing study of the content trainees are strongly advised to take the quiz to evaluate their progress. They can revise the study material if needed.</p>
+        <h2 class="trainer">Guidelines for Trainers</h2>
+        <p class="trainer">Guidelines for Trainers includes suggestions and tips for trainers on how to use the content of this module to train people in the use of effective search strategies.</p>
+        <span class="trainer">
+          <h3>Preparation</h3>
+        <p>Preparing a presentation (PowerPoint/Prezi/Canva) which is supported by visual materials and which displays the results of database/search engine searches is strongly suggested. During the course a real time demonstration is also strongly suggested.</p>
+        <h3>Getting Started</h3>
+        <p>A short quiz (3 to 5 questions) in Kahoot, or questions with Mentimeter can be used at the beginning for engaging participants in discussion on the topic. The quiz can also be used as a motivation tool, as well as a tool used to check trainees&rsquo; existing knowledge on the subject. Some examples for questions could be: What are Boolean operators? What are truncations? How can we use &ldquo;quotation marks&rdquo; for phrase searching?</p>
+        <h3>Methods to Use</h3>
+        <p>Various teaching methods can be used in combination with each other during the training. Such as:</p>
+        <ul>
+        <li>Lecturing</li>
+        <li>Group discussion</li>
+        <li>Individual work</li>
+        <li>Self-reflection</li>
+        </ul>
+        <h3>Tips for Trainers</h3>
+        <h4>Warming-up</h4>
+        <p>An effective way of involving participants and their expectations about what they will learn is to ask a few preliminary questions on the subject. For instance, trainees can be asked to conduct online searches for one or more negotiated queries. The activity can be conducted as follows:</p>
+        <ul>
+        <li>prepare different queries which need to apply search strategies</li>
+        <li>select a database for each query</li>
+        <li>ask participants to conduct online searches for these queries</li>
+        <li>ask participants to save their search strategy and results</li>
+        <li>ask participants to share and discuss their results with other participants</li>
+        </ul>
+        <p>After sharing make sure that participants are able to understand that different search strategies bring different results. Trainees should understand the benefits of effective search strategies.</p>
+        <h4>Presenting the Objective of the Lesson</h4>
+        <p>The objective of the lesson (which is to explain effective search strategies, and understanding the impact of using these strategies on search results) should be made clear. Following the warm-up questions, it will be easier to clarify the objectives.</p>
+        <h4>Presenting the Lesson Content</h4>
+        <p>While presenting the content, make sure to interact with the trainees and encourage them to participate actively.</p>
+        <h5>Before</h5>
+        <ul>
+        <li>Before the lesson prepare queries for participants to practice searching (determine queries, conduct searches for these queries, and try different databases for queries)</li>
+        <li>Before the lesson decide which sources and databases will be used for practice</li>
+        </ul>
+        <h5>During</h5>
+        <ul>
+        <li>At the beginning of the lesson ask participants their opinion about why an effective search strategy is important</li>
+        <li>At the beginning of the lesson ask participants what the effect of an effective search strategy is on information retrieval</li>
+        <li>At the beginning of the lesson, ask participants to conduct searches about given queries, and save the results</li>
+        </ul>
+        <h5>Afterwards</h5>
+        <ul>
+        <li>After explaining the topics, ask participants to conduct the same searches that were carried out at the beginning of the lesson. For example, after explaining Boolean operators, ask participants to conduct the same query, using Boolean operators</li>
+        <li>Compare previous saved results with the new results</li>
+        <li>Some techniques (for example truncations, wildcards etc.) can vary from database to database. Conduct the same queries in different databases</li>
+        <li>Discuss the results with the participants</li>
+        </ul>
+        <h5>Suggestions</h5>
+        <ul>
+        <li>Be sure to support your lessons with practical examples and exercises</li>
+        </ul>
+        <h4>Conclusion</h4>
+        <p>Give a short summary of the lesson, and ask questions which would help underline the most important content and practises that you would like to emphasise. Such as:</p>
+        <p>Why are effective search strategies important?</p>
+        <p>After the discussion period, make sure that trainees understand that search strategies are very important for information retrieval, and that they give researchers a comprehensive plan for conducting their search. To be aware of effective search strategies will enable participants to satisfy information needs thoroughly and efficiently.</p>
+        </span>
+          <h2>Content: Effective Search Strategies</h2>
+        <h3>Introduction</h3>
+        <p>News literacy includes an understanding of the role of news in society, the motivation to seek out news, and the ability to find, identify, recognize, critically evaluate, and create news (Malik, Cortesi &amp; Gasser, 2013, p. 8-9). To put it more generally: In order to be literate (information, news, data, finance etc.), people need to have the skills and knowledge to find information which will meet their needs.</p>
+        <p>An effective search strategy is important in order to find information relevant to research topics. In general terms, a search strategy is a comprehensive plan for meeting research goals. Before starting online search (conducting an effective search strategy) it is necessary to determine whether the query is a known-item or a subject search. A known-item search is a query for an actual (or known) source. In this kind of search one uses information describing an item such as an author&rsquo;s name, a title, a publication name etc. A subject search is a query for information on a topic. &ldquo;This is the most challenging type of search because you cannot specify precisely what you need and what you can safely reject&rdquo; (Fulton &amp; McGuinness, 2016, p.123). It is worth mentioning that effective search strategies are especially important and decisive for this kind of search.</p>
+        <p>After deciding on the type of query, the relevant source/database should be selected (see also Module 12). After that facet analysis and logical combination should be done. &ldquo;A facet is a word or a very short phrase that describes a single concept or idea&rdquo; (Markey, 2019, p.98). For example: Is there a relationship between &ldquo;fake news&rdquo; and &ldquo;social media&rdquo;; for this query the facets are: fake news and social media.</p>
+        <p>After presearch preparation an effective search strategy should be applied. In this section some of the search functions and operators necessary for developing an effective search strategy will be examined.</p>
+        <h3>Boolean Logic</h3>
+        <p>Boolean operators are used in most information databases and search engines, providing the ability to combine synonyms and variant concepts together to access relevant items (Alexander, 2003, p. 62).</p>
+        <p>Boolean logic refers to the logical relationship among terms in a search. AND, OR, and NOT are the basic Boolean operators. These operators expand or narrow the search.</p>
+        <ul>
+        <li>AND is inserted between two terms: This operator tells the search system to find sources bearing both terms,</li>
+        <li>OR is inserted between two terms: This operator tells the search system to find sources bearing either terms,</li>
+        <li>NOT is inserted between two terms: A and B, this operator tells the search system to exclude sources bearing the second term, B, from the first term, A (Markey, 2019, p. 100).</li>
+        </ul>
+          <p><img src="img/part_03-module_14/figure_02_03_04.png"></p>
+        <div class="well">
+        <p>Example 1: Conducting a Topic Search in the Web of Science Database</p>
+        <p>Search Terms: misinformation, disinformation</p>
+        <p>Boolean Operators: AND, OR, NOT</p>
+        <p><img src="img/part_03-module_14/figure_06.png"></p>
+        <p>In the above search:</p>
+        <p># 1 will find records on the topic of misinformation</p>
+        <p># 2 will find records on the topic of disinformation</p>
+        <p># 3 will find records containing the topics of misinformation and disinformation</p>
+        <p># 4 will find records containing topics on the individual search terms misinformation or disinformation; or topics on both search terms used together</p>
+        <p># 5 will only find records containing the topic of misinformation, and will exclude records on the topic of disinformation.</p>
+        </div>
+        <div class="well">
+        <p>Example 2: Conducting a Topic Search in the Web of Science Database</p>
+        <p>Search Terms: posttruth, post truth, post-truth</p>
+        <p>Boolean Operators: OR</p>
+        <p><img src="img/part_03-module_14/figure_05.png"></p>
+        <p>In the above search:</p>
+        <p># 1 will find records on the topic of posttruth</p>
+        <p># 2 will find records on the topic of &ldquo;post truth&rdquo;</p>
+        <p># 3 will find records on the topic of post-truth</p>
+        <p># 4 will find records containing the individual search terms posttruth or &ldquo;post truth&rdquo;, or post-truth; or combinations such as &ldquo;posttruth&rdquo; and &rdquo;post truth&rdquo;, &ldquo;posttruth&rdquo; and post-truth, &ldquo;post truth&rdquo; and post-truth; or all three search terms together in the same record.</p>
+        </div>
+        <div class="well">
+        <p>Example 3: Conducting a Title Search in the Web of Science Database</p>
+        <p>Search Terms: www, world wide web, &ldquo;world wide web&rdquo;</p>
+        <p>Boolean Operators: OR</p>
+        <p><img src="img/part_03-module_14/figure_08.png"></p>
+        <p>In the above search:</p>
+        <p># 1 will find records with www in the title</p>
+        <p># 2 will find records with world wide web in the title</p>
+        <p># 3 will find records with both world wide web, and www together in the title; or records with only one of the search terms in the title.</p>
+        <p># 4 will find records with both &ldquo;world wide web&rdquo;, and www together in the title; or records with only one of the search terms in the title.</p>
+        </div>
+        <div class="well">
+        <p>Example 4: Conducting a Topic Search in the Web of Science Database</p>
+        <p>Search Terms: propaganda, political</p>
+        <p>Boolean Operators: NOT</p>
+        <p><img src="img/part_03-module_14/figure_07.png"></p>
+        <p>In the above search:</p>
+        <p># 1 will find records on the topic of propaganda</p>
+        <p># 2 will find records on the topic of political</p>
+        <p># 3 will find records on the topic of propaganda, but will exclude records on the topic of political.</p>
+        </div>
+        <h4>Nesting</h4>
+        <p>Nesting is used to organise search logic, and the order in which Boolean commands will be performed. Nesting is commonly indicated by using parentheses (Alexander, 2003, p. 62). Nesting uses parentheses to keep concepts that are alike together, and command the database to look for search terms in the parentheses first. The system processes the Boolean command by first reading the statement in the innermost parentheses, and then continuing to read outward through to the outermost parentheses.</p>
+        <div class="well">
+        <p>Example 1: Topic = ((news OR media) AND literacy) NOT "new media"</p>
+        <p>In the above example the database will first find the documents news literacy OR media literacy, and exclude documents which include "new media&rdquo;.</p>
+        </div>
+        <div class="well">
+        <p>Example 2: Conducting a Topic Search in the Web of Science Database</p>
+        <p>Search Terms: news literacy, media literacy, information literacy, post-truth, fake news, new media</p>
+        <p>Boolean Operators: AND, OR, NOT, and NESTING</p>
+        <p><img src="img/part_03-module_14/figure_01.png"></p>
+        <p>In the above search:</p>
+        <p># 1 will find records on the topics news literacy and information literacy; or media literacy and information literacy</p>
+        <p># 2 will first find records on the topics news literacy and information literacy; or media literacy and information literacy, and exclude documents which include &ldquo;fake news&rdquo; or post-truth, or "new media&rdquo;.</p>
+        </div>
+        <h4>Exercises</h4>
+        <ol>
+        <li>Consider these statements. Try describing in words what the content of the documents retrieved by these statements would be. Test out the statements in one multidisciplinary database (e.g. ScienceDirect, Academic Search Ultimate)
+        <br><br><p style="padding-left: 40px;">magazines <strong>OR</strong> journals <strong>NOT</strong> books<br /><strong>(</strong>magazines <strong>OR</strong> journals<strong>) NOT </strong>books<br /><strong>(</strong>magazines <strong>OR</strong> journals<strong>) AND </strong>books<br />magazines <strong>OR (</strong>journals <strong>AND</strong> books<strong>)</strong><br /><strong>(</strong>magazines <strong>OR (</strong>journals <strong>NOT</strong> books<strong>)) AND</strong> libraries</p>
+        </li>
+        <li>Choose a few terms relating to a subject that interests you, and try a number of Boolean combinations in order to search them.</li>
+        </ol>
+        <h3>Controlled Vocabularies</h3>
+        <p>Databases use controlled vocabularies to index records; this is the one of the most important differences, in terms of searching, between databases and the Web (Fulton &amp; McGuinness, 2016, p.131).</p>
+        <p>A controlled vocabulary is &ldquo;an organised arrangement of words and phrases used to index content and/or to retrieve content through browsing or searching&rdquo; (Harpring, 2010). In other words, a controlled vocabulary is a list of equivalent terms in the form of a synonym ring, or a list of preferred terms. It defines hierarchical relationships between terms with broader, narrower, related terms, and used for (Morville &amp; Rosenfeld, 2007, p.194). In order to maximise search efficiency, and to retrieve related records, it is recommended that controlled vocabulary terms be used. In the case that the term chosen by the user and the term used by the system is not the same, databases provide online thesaurus/subject terms/indexes, in order to facilitate the selection of the appropriate terms or descriptors used in the system (Fulton &amp; McGuinness, 2016, p. 132). Controlled vocabulary, also known as subject headings, a thesaurus, descriptors, or authority control (Bell, 2015, p. 33). &ldquo;Thesaurus is a formal term for a particular variety of controlled vocabulary... A thesaurus may provide the list of subject headings in a hierarchical fashion, showing relationships between the terms (broader, narrower, related), and it may provide pointers to the best terms to use&rdquo; (Bell, 2015, p. 48).</p>
+        <ul>
+        <li>Broader terms (BT) show &ldquo;a hierarchical relationship between two controlled vocabulary terms in a thesaurus that expresses either a whole&ndash;part or genus&ndash;species relationship, the broader term designating the whole or the genus&rdquo; (Markey, 2019, p. 367).</li>
+        <li>Narrower terms (NT) show &ldquo;a hierarchical relationship between two controlled vocabulary terms in a thesaurus that expresses either a whole&ndash;part or genus&ndash;species relationship, the narrower term designating the part or the species&rdquo; (Markey, 2019, p. 373).</li>
+        <li>Related terms (RT) show &ldquo;a controlled vocabulary term in a thesaurus that is coordinate to another controlled vocabulary term. Because both terms are at the same level in the hierarchy, they are not related hierarchically. Also called an associative relationship&rdquo; (Markey, 2019, p. 375).</li>
+        <li>Used for (UF) shows &ldquo;in an authority record, a list of unused synonyms for the record&rsquo;s authorised name, subject, or title&rdquo; (Markey, 2019, p. 379).</li>
+        </ul>
+        <div class="well">
+        <p>Example 1: Browsing the Library, Information Science &amp; Technology Thesaurus</p>
+        <p>Term: literacy</p>
+        <p>When you enter a search term, for example, literacy in the thesaurus, you might retrieve an entry that looks something like this:</p>
+        <p><img src="img/part_03-module_14/figure_09.png"></p>
+        <p>Literacy is a valid search term used to describe information items in the Library, Information Science &amp; Technology database. Education is a broader term for literacy; computer literacy and metaliteracy are examples of narrower terms. Illiterate persons and readership are some examples of related terms. Literacy should be used instead of (Used for) illiteracy.</p>
+        </div>
+        <p>Advantages of controlled vocabulary are indicated by Bell (2015, p. 33-34) as follows:</p>
+        <ul>
+        <li>Saves you from thinking about all possible synonyms or alternative spellings of a term. For example, if clothing is assigned as the subject heading for all documents that are related with &ldquo;clothing&rdquo;, you don&rsquo;t need to think about other related terms such as; dress, costume, outfit ect.</li>
+        <li>The use of controlled vocabulary should make your search more complete (if the indexers are reliable/consistent about assigning subject heading for terms).</li>
+        <li>Subject headings lists disambiguate words that have several meanings (e.g., mercury&mdash;a planet, a car, a god, or a metal?). For author names, authority control provides one way to look up an author known by more than one name (e.g., Mark Twain/Samuel Clemens).</li>
+        <li>Provides a safe and helpful entry point into an unfamiliar subject area. Even if you know nothing about the subject, you have the assurance that the terms in the subject list are correct and appropriate. By browsing in the list and getting a sense of the terms (especially if there are &ldquo;see&rdquo; or &ldquo;use&rdquo; or &ldquo;see also&rdquo; references), you can often get ideas to help you develop or refine a search strategy.</li>
+        </ul>
+        <h3>Field Searching</h3>
+        <p>Field searching allows the searcher to confine search terms and phrases to particular fields, providing more concise and relevant search results (Alexander, 2003, p. 62). Limiting a search to a specific field, for example to search just the &ldquo;publication name&rdquo; field for a particular name, may also help to reduce the search processing time of the system.</p>
+        <p>Database records use fields to designate information about sources, and describe a particular kind of data, like author, title, or summary. &ldquo;When search systems index the values in fields, they keep track of the fields from which the values were extracted&rdquo; (Markey, 2019, p. 112).</p>
+        <p>Field names may vary depending on the database. Some examples of field names: author, author affiliation, title, source (publication name, journal or book title), keywords, subject, topic, funding agency, year etc. Some databases use field codes, such as AU: Author; TS: Topic, in order to make a search. These codes are database specific.</p>
+        <div class="well">
+          <p>Example 1: Field names and definitions from the IEEE Xplore Database</p>
+        <table class="table table-bordered">
+        <tr>
+        <td>
+        <p>Field Name</p>
+        </td>
+        <td>
+        <p>Definition</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <p>Abstract</p>
+        </td>
+        <td>
+        <p>Brief summary or statement of the contents of a journal article, conference paper, standard, book, book chapter, or course.</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <p>Author Affiliation</p>
+        </td>
+        <td>
+        <p>Institutional affiliation of authors listed in documents (university, government agency, corporation, etc.).</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <p>Author Keywords</p>
+        </td>
+        <td>
+        <p>Terms provided by the author which describe the topics or subjects of the document.</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <p>Authors</p>
+        </td>
+        <td>
+        <p>Name of the author or authors listed in the document.</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <p>Document Title</p>
+        </td>
+        <td>
+        <p>Title of an individual document (journal article, conference paper, standard, book chapter, or course).</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <p>Full Text &amp; Metadata</p>
+        </td>
+        <td>
+        <p>Full Text refers to the text of a paper, article, standard, etc. Metadata is the detailed information that describes the full text, like author names, publish date, and DOI.</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <p>Index Terms</p>
+        </td>
+        <td>
+        <p>Combined field which allows users to search the Author Keywords, IEEE Terms, INSPEC Terms, and Mesh Terms.</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <p>Publication Title</p>
+        </td>
+        <td>
+        <p>Title of a publication (journal, conference, or book).</p>
+        </td>
+        </tr>
+        </table>
+        <p>Source: IEEE Xplore: Resources and Help</p>
+        </div>
+        <div class="well">
+        <p>Example 2: Conducting a search with field names in Web of Science database</p>
+        <p>2.1. A search using field names (topic, title, author, publication name, year published, document type, and organisation-enhanced) in Web of Science database</p>
+        <p><img src="img/part_03-module_14/figure_13.png"></p>
+        <p>2.2. Result of the above search in Web of Science database</p>
+        <p><img src="img/part_03-module_14/figure_10.png"></p>
+        </div>
+        <h3>Proximity Searching</h3>
+        <p>Proximity searching allows you to specify that term A must appear within so many words of term B. For example, if you were trying to find something about data protection in the European Union a search strategy such as:</p>
+        <p>TS = "European Union" AND "data protection"</p>
+        <p>will certainly bring relevant results but also, possibly, many irrelevant results, because search terms can occur anywhere in a retrieved document. For example:</p>
+        <p><img src="img/part_03-module_14/figure_12.png"></p>
+        <p>Most of the database systems allow one to set up a more sophisticated search, in which one sets a rule for the relationship between search terms. That is, one can state how close to each other, and sometimes in what order search terms must appear in the text to qualify for retrieval. This is known as proximity searching (Bell, 2015, p. 49). Proximity searching helps achieve greater precision in retrieved documents.</p>
+        <p>A proximity search uses special operators which are called proximity operators.</p>
+        <h4>Proximity Operators</h4>
+        <p>According to the Markey (2019, p. 375) a proximity operator is an operator in a search system that specifies two criteria:</p>
+        <ol>
+        <li>How close the words should occur in the text</li>
+        <li>Whether word order matters</li>
+        </ol>
+        <p>Proximity operators help to narrow or broaden a search, and improve search results. For example: A &ldquo;fake news&rdquo; NEAR3 &ldquo;false information&rdquo; search in a database, or a &ldquo;fake news&rdquo; AROUND (3) &ldquo;false information&rdquo; would retrieve more specific results than a &ldquo;fake news&rdquo; AND &ldquo;false information&rdquo;.</p>
+        <p>Unfortunately the names of the operators and syntax vary from system to system.</p>
+        <p>Some examples are:</p>
+        <ul>
+        <li aria-level="1">
+        <p>WITHIN &rarr; Wn</p>
+        </li>
+        </ul>
+        <p style="padding-left: 40px;">misinformation <strong>W2</strong> social media</p>
+        <p style="padding-left: 40px;">This means that misinformation must appear within two words of social media to be retrieved. In response to this search, for example EBSCOhost database will return results such as:</p>
+        <p style="padding-left: 40px;">&hellip;<strong>misinformation</strong> sharing on <strong>social media</strong>&hellip;<br />&hellip;<strong>misinformation</strong> on social <strong>media</strong>...</p>
+        <ul>
+        <li aria-level="1">
+        <p>PRE &rarr; Pre/n or P/n</p>
+        </li>
+        </ul>
+        <p style="padding-left: 40px;">"European Union" <strong>PRE/5</strong> framework</p>
+        <p style="padding-left: 40px;">This means that the search term European Union must come first, and must precede framework by no more than five words. For example, in response to this search ProQuest database will return results such as:</p>
+        <p style="padding-left: 40px;">...in the <strong>European Union</strong> Legal <strong>Framework</strong>...<br />...<strong>European Union</strong> and Turkey in the <strong>Framework</strong> of...<br />...<strong>European Union</strong> Common Agricultural Policy under WTO <strong>Framework</strong>...</p>
+        <ul>
+        <li aria-level="1">
+        <p>NEAR &rarr; Near/n or N/n or Nn</p>
+        </li>
+        </ul>
+        <p style="padding-left: 40px;">disadvantaged <strong>NEAR/5</strong> children</p>
+        <p style="padding-left: 40px;">This means that <em>disadvantaged</em> and <em>children</em> must occur within no more than five words of each other, regardless of word order. In response to this search, for example, IEEE Xplore database will return results such as:</p>
+        <p style="padding-left: 40px;">...school for <strong>children</strong> from <strong>disadvantaged</strong> circumstances<br />...<strong>disadvantaged</strong> primary school <strong>children</strong>...<br />...<strong>disadvantaged</strong>, preschool, gifted <strong>children</strong>&hellip;<br />...<strong>children</strong> from among culturally different/educationally <strong>disadvantaged</strong>...</p>
+        <div class="well">
+        <p>Example 1: Conducting a Topic Search in the Web of Science Database</p>
+        <p>Search Terms: &ldquo;fake news&rdquo;, &ldquo;false information&rdquo;</p>
+        <p>Proximity Operators: NEAR</p>
+        <p><img src="https://lh4.googleusercontent.com/Z4FUr9jeUT_LVMKIR3QGvH5RERPelgoSU4PoB0gIgQV6_X8-kDg-_0eepUFly5KAdbWFO9i8fFclyGBA9S1wW_8A5XwwKCHY6nX6cXCMd1idc5Zxbp3cPTmtdC_mJJOx1YI6pJ0" width="601" height="156" /></p>
+        <p>In the above search:</p>
+        <p># 2 will find records with &ldquo;fake news&rdquo; and &ldquo;false information&rdquo; which must occur within no more than three words of each other, regardless of word order.</p>
+        </div>
+        <div class="well">
+        <p>Example 2: Conducting a Search in Google</p>
+        <p>Search Terms: &ldquo;fake news&rdquo;, &ldquo;false information&rdquo;</p>
+        <p>Proximity Operators: AROUND</p>
+        <p><img src="img/part_03-module_14/figure_16_17.png"></p>
+        </div>
+        <p>Some databases and sources used the terms adjacency and nearby operators in lieu of the term <em>proximity operator</em>. The difference between adjacency and nearby operators is word order.</p>
+        <p><em>Adjacency operators</em> specify that search words must be adjacent to each other, and word order matters (Markey, 2019, p. 365). <em>Within (W), Pre</em>, and ~ can be given as examples of a<em>djacency operators</em>.</p>
+        <p>An example search for results that would match &ldquo;<strong>bandwagon effect</strong>&rdquo; or &ldquo;<strong>bandwagon</strong> worker <strong>effect</strong>&rdquo;, but not match &ldquo;<strong>effect</strong> of <strong>bandwagon</strong>&rdquo; would be:</p>
+        <p style="padding-left: 40px;">EBSCOhost: bandwagon W2 effect<br />ProQuest: bandwagon PRE/2 effect<br />Taylor &amp; Francis Online:  &ldquo;bandwagon effect&rdquo; ~2</p>
+        <p><em>Nearby operators</em> specify that search words are separated by one or more intervening word(s), and that the order of the search words does not matter (Markey, 2019, p. 373). <em>NEAR, N,</em> and ~ can be given as examples of nearby operators.</p>
+        <p>An example search for results that would match &ldquo;<strong>European Union</strong> general <strong>data protection</strong>&rdquo;, &ldquo;<strong>data protection</strong> in the <strong>European Union</strong>&rdquo;, &ldquo;European Union developments on <strong>data protection</strong>&rdquo; would be:</p>
+        <p style="padding-left: 40px;">EBSCOhost: &ldquo;data protection&rdquo; N2 &ldquo;European Union&rdquo;<br />ProQuest: bandwagon NEAR/2 effect<br />Taylor &amp; Francis Online:  "data protection" "european union"~2</p>
+        <h4>Phrase Searching</h4>
+        <p>Phrase searching is denoted by enclosing the terms you wish to search as an exact phrase (e.g., &ldquo;<strong>digital literacy</strong>&rdquo;) between quotation marks. Phrase searching allows you to ensure that your search terms will appear as an exact match in the search results. This approach helps to narrow a search, excluding results in which both terms appear, but not directly together as an exact match (Fulton and McGuinness, 2016, p. 136). Many databases (EBSCO, WoS, JSTOR ect.) and search engines such as Google, Bing, or others, all follow the convention of enclosing the terms to be searched as an exact phrase within double quotation marks (Bell, 2015, p. 53).</p>
+        <ul>
+        <li>In some databases, such as ScienceDirect or Scopus, punctuation is ignored in a phrase search. For example a phrase search such as:</li>
+        </ul>
+        <p style="padding-left: 80px;">&rdquo;<strong>heart-attack</strong>&rdquo; and &ldquo;<strong>heart attack</strong>&rdquo;</p>
+        <p style="padding-left: 80px;">will return the same results.</p>
+        <ul>
+        <li>In some databases, such as <em>Scopus</em>, to search for an exact match braces <strong>{}</strong> should be used. For example, an exact match search using braces, such as:</li>
+        </ul>
+        <p style="padding-left: 80px;"><strong>&ldquo;heart attack&rdquo;</strong> and <strong>{heart attack}</strong></p>
+        <p style="padding-left: 80px;">will not return the same results. Because &ldquo;heart attack&rdquo; will return &ldquo;heart attacks&rdquo; too, but {heart attack} will not return &ldquo;heart attacks&rdquo;.</p>
+        <h3>Truncation and Wildcards</h3>
+        <h4>Truncations</h4>
+        <p>Truncation is an effective way of extending a search by searching for variants of the same term, such as plural forms. Truncation allows searching with a word stem, which allows retrieval of any word beginning with those letters (Bell, 2015, p. 54). To conduct such a search truncation symbols, such as *, ?, $ are added to the stem of a word.</p>
+        <p>For example:</p>
+        <ul>
+        <li>to retrieve documents containing the terms librar<span style="text-decoration: underline;">y</span>, librar<span style="text-decoration: underline;">ies</span>, librar<span style="text-decoration: underline;">ian</span>, and librar<span style="text-decoration: underline;">ianship</span> an asterisk (<strong>*</strong>) is added to the words stem <em><strong>librar*</strong></em></li>
+        <li>to retrieve documents containing informa<span style="text-decoration: underline;">tion</span> beha<span style="text-decoration: underline;">viour</span>, informa<span style="text-decoration: underline;">tion</span> behaviour, informa<span style="text-decoration: underline;">tional</span> behaviour, informa<span style="text-decoration: underline;">tional</span> beha<span style="text-decoration: underline;">viour,</span> informa<span style="text-decoration: underline;">tion</span>-beha<span style="text-decoration: underline;">viour</span>, informa<span style="text-decoration: underline;">tiveness </span>beha<span style="text-decoration: underline;">viour</span> an asterisk (*) is added to the words stem <strong><em>informa* beha*</em></strong></li>
+        </ul>
+        <p>It is important to be aware that truncation symbols can vary according to the database or search engine (Fulton and McGuinness, 2016, p. 137). The most frequently used are:</p>
+        <p style="padding-left: 40px;">- *<br />- ?<br />- !<br />-$</p>
+        <p>When the stem is a word in its own right, that word will be included in the search results (Bell, 2015, p. 54). For example:</p>
+        <ul>
+        <li aria-level="1">
+        <p><strong>journal*</strong> retrieves records containing the words <strong>journal</strong>, journals, journalism, journalist, journalists, journalists&rsquo;, journalistic, journaling</p>
+        </li>
+        </ul>
+        <p>Truncating words excessively can result in low specificity. For example,</p>
+        <ul>
+        <li>cat* retrieves records cat, catalyst, catalogues, catastrophic, etc. If the search term is cat (<em>the mammal</em>), a query like cat, or cats will bring more accurate results.</li>
+        </ul>
+        <p>In some databases plurals and spelling variants are included automatically. For example, in ScienceDirect database:</p>
+        <p style="padding-left: 40px;">&ldquo;color code&rdquo; or &ldquo;colour code&rdquo; or &ldquo;colour codes&rdquo;</p>
+        <p>will return the same results.</p>
+        <h4>Wildcards</h4>
+        <p>Wildcards work in a way similar to truncation. A symbol, such as <strong>*, ?, !,</strong> is used to search for terms that can be spelled in different ways. They are useful for searching for terms which use both American and United Kingdom spellings (such as <em>licence</em> and <em>license</em>). A symbol is usually inserted within the word to replace a single letter (Fulton and McGuinness, 2016, p. 13).</p>
+        <p>For example,</p>
+        <ul>
+        <li>the use of &ldquo;?&rdquo; (wildcard) &rarr; licen?e returns the results &rarr; licenCe, licenSe</li>
+        </ul>
+        <p>You can use &ldquo;?&rdquo; (wildcard) to retrieve the singular and plural forms of some words, for example, woman, as well as women:</p>
+        <ul>
+        <li>wom?n &rarr; womAn, womEn</li>
+        </ul>
+        <p>Wildcards are most frequently used to replace just one letter (Bell, 2015, p. 56), but in some databases they can be used for a &ldquo;zero-to-one&rdquo; character, or any group of characters which also include no character.</p>
+        <p>For example, using wildcards in Web of Science database:</p>
+        <ul>
+        <li>The asterisk (*) represents any group of characters, including no character.</li>
+        </ul>
+        <p style="padding-left: 80px;">f*food &rarr; fastfood, futurefood, frankenfood, fishfood, fitfood</p>
+        <ul>
+        <li>The question mark (?) represents any single character.</li>
+        </ul>
+        <p style="padding-left: 80px;">organi?e &rarr; organiSe, organiZe</p>
+        <ul>
+        <li>The dollar sign ($) represents zero or one character.</li>
+        </ul>
+        <p style="padding-left: 80px;">colo$r &rarr; color, coloUr</p>
+        <p>Wildcards can be combined in a search term. For example,</p>
+        <ul>
+        <li aria-level="1">
+        <p>organi<strong>?</strong>ation<strong>*</strong> &rarr; organi<strong>s</strong>ation, organi<strong>z</strong>ation, organi<strong>z</strong>ation<strong>s</strong>, organi<strong>z</strong>ation<strong>al</strong></p>
+        </li>
+        </ul>
+        <h4>Notes</h4>
+        <p>1- Note that the symbols used for wildcards are the same as those used for truncation, but the effect changes, depending on the database. For example, one database may use &ldquo;!&rdquo; for truncation and &ldquo;*&rdquo; for a wildcard, while another exactly reverses those two meanings (Bell, 2015, p. 56).</p>
+        <p>2- Note that in some databases there is no difference between wildcards and truncations. For example to use &ldquo;*&rdquo; as a wildcard in Scopus database,</p>
+        <p style="padding-left: 40px;">criminal* liab*</p>
+        <p>will return results such as <strong>criminally liab</strong>le and <strong>criminal liability</strong>.</p>
+        <p>3- Note that in some databases plurals and spelling variants are included automatically. For example,</p>
+        <p style="padding-left: 40px;"><em>heart attack</em></p>
+        <p>will return results which include <em>heart attacks</em></p>
+        <p style="padding-left: 40px;"><em>anesthesia</em></p>
+        <p>will return results which include <em>anaesthesia</em></p>
+        <p>4- Note that in some databases using the singular form of a term retrieves singular, plural, and possessive forms of most terms. For example,</p>
+        <p style="padding-left: 40px;"><em>criterion</em></p>
+        <p>finds <em>criteria</em> and <em>criterion</em></p>
+        <p>5- Note that in some databases when a hyphen (-) is placed between a wildcard and a word, the wildcard is dropped. For example,</p>
+        <p style="padding-left: 40px;"><strong>*-art</strong> will be searched as art<br /><strong>art-*</strong> will be searched as art</p>
+        <p>(Scopus, 2021).</p>
+        <h3>Refining Searches</h3>
+        <p>Almost all databases and search engines allow users to select options to limit, or narrow search results.</p>
+        <p>For example; publication years, article/document type (e.g. review articles, research articles, book chapter), source type (e.g. journal, book), publication title, author, subject areas (neuroscience, psychology ect.), keyword, access type (e.g. open access), affiliation (e.g. University of Iowa), and language (e.g. Spanish)</p>
+        <p>These are some of the limiters used to refine search results or to limit search results.</p>
+        <p>Example 1: Example of &ldquo;refine results&rdquo; from Web of Science database:</p>
+        <p><img src="img/part_03-module_14/figure_19.png"></p>
+        <h3>Quiz</h3>
+        <p><iframe src="http://essential.bilgiyonetimi.net/wp-admin/admin-ajax.php?action=h5p_embed&id=24" width="846" height="397" frameborder="0" allowfullscreen="allowfullscreen"></iframe><script src="http://essential.bilgiyonetimi.net/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script></p>
+        <h2>References</h2>
+        <p>Alexander, J.O. (2003). Library Applications. H. Bidgoli (Ed.), In Encyclopedia of Information Systems, (p. 57-76). Elsevier.</p>
+        <p>Bates, M.J. (1979). Information Search Tactics. Journal of the American Society for Information Science, 30, 205-214.</p>
+        <p>Bell, S.S. (2015). Librarian&rsquo;s Guide to Online Searching: Cultivating Database Skills for Research and Instruction. California: Libraries Unlimited.</p>
+        <p>EBSCO Connect (2018). Searching with Boolean Operators. Retrieved from <a target="_blank" href="https://connect.ebsco.com/s/article/Searching-with-Boolean-Operators?language=en_US">https://connect.ebsco.com/s/article/Searching-with-Boolean-Operators?language=en_US</a></p>
+        <p>Fulton, C. and McGuinness, C. (2016). Digital Detectives: Solving Information Dilemmas in an Online World. Amsterdam: Chandos Publishing.</p>
+        <p>Harpring, P. (2010). Introduction to controlled vocabularies: Terminology for art, architecture, and other cultural works. J. Paul Getty Trust. Retrieved from<a target="_blank" href="http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/index.html"> http://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/index.html</a></p>
+        <p>IEEE Xplore: Resources and Help. (2021). Retrieved from <a target="_blank" href="https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/command-search#summary-of-data-fields">https://ieeexplore.ieee.org/Xplorehelp/searching-ieee-xplore/command-search#summary-of-data-fields</a></p>
+        <p>Malik, M., Cortesi, S.C., and Gasser, U. (October 18, 2013). The Challenges of Defining 'News Literacy'. Berkman Center Research Publication No. 2013-20, DOI: <a target="_blank" href="http://dx.doi.org/10.2139/ssrn.2342313">http://dx.doi.org/10.2139/ssrn.2342313</a></p>
+        <p>Markey, K. (2019). Online Searching: A Guide to Finding Quality Information Efficiently and Effectively (2nd edition). Lanham: Rowman &amp; Littlefield.</p>
+        <p>Morville, P. and Rosenfeld, L. (2007). Information Architecture for the World Wide Web. Farnham: O'Reilly.</p>
+        <p>Scopus: Access and use Support Center. (2021). Retrieved from <a target="_blank" href="https://service.elsevier.com/app/answers/detail/a_id/11213/c/10545/supporthub/scopus/">https://service.elsevier.com/app/answers/detail/a_id/11213/c/10545/supporthub/scopus/</a></p>
+        <h2>Recommended Sources</h2>
+        <p>Brown, C.C. (2021). Librarian's Guide to Online Searching: Cultivating Database Skills for Research and Instruction (6th Edition). Libraries Unlimited.</p>
+        <p>Dotto, C. &amp; Smith, R. (October 2019). First Draft's Essential Guide to: Newsgathering and Monitoring on the Social Web. Retrieved from <a target="_blank" href="https://firstdraftnews.org/wp-content/uploads/2019/10/Newsgathering_and_Monitoring_Digital_AW3.pdf?x35395">https://firstdraftnews.org/wp-content/uploads/2019/10/Newsgathering_and_Monitoring_Digital_AW3.pdf?x35395</a></p>
+        <p>Li, L. (2014). Scholarly information discovery in the networked academic learning environment. Oxfordshire, [England] : Chandos Publishing.</p>
+        <p>Mann, T. (2015). The Oxford Guide to Library Research (4th ed.). Oxford University Press.</p>
+        <h2>Recommended Videos</h2>
+        <p>Boucher, A., Riesen, K., &amp; Simpson, L. <a target="_blank" href="https://youtu.be/GM2l_JLwf0s">Basic Search Strategies for Systematic Reviews</a>.</p>
+        </div><!--/span-->
+      </div><!--/row-->
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.tocify.js"></script>
+    <script src="js/prettify.js"></script>
+    <script src="js/user_control.js"></script>
+    <script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3,h4,h5"
+            }).data("toc-tocify");
+
+            prettyPrint();
+            $(".optionName").popover({ trigger: "hover" });
+
+        });
+    </script>
+
+  </body>
+</html>
